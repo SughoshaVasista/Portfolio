@@ -1,0 +1,323 @@
+:root {
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  --font-code: "Fira Code", monospace;
+
+  /* 🌟 Main Brand Color 
+     - Use for buttons, active links, highlights, CTAs (Call To Action) */
+  --color-primary: #4f46e5; /* Indigo Blue */
+
+  /* 🎨 Backgrounds 
+     - bg: main page background
+     - surface: cards, navbars, sections */
+  --color-bg: #0f172a; /* Dark Charcoal */
+  --color-surface: #1e293b; /* Slate Gray */
+
+  /* ✍️ Text Colors 
+     - text: main body text
+     - text-muted: secondary info, subtitles, footer */
+  --color-text: #f9fafb; /* Soft White */
+  --color-text-muted: #94a3b8; /* Muted Gray */
+
+  /* 💎 Accent Colors 
+     - Use for hover effects, icons, highlights, code keywords */
+  --color-accent-cyan: #06b6d4; /* Links hover, tech glow */
+  --color-accent-green: #10b981; /* Success highlights, badges */
+
+  /* ✅ Status Colors (optional) 
+     - Use in forms, alerts, or status indicators */
+  --color-success: #22c55e; /* Success messages */
+  --color-warning: #facc15; /* Warnings, attention states */
+  --color-error: #ef4444; /* Errors, validation issues */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: var(--color-primary);
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav_list li {
+  display: flex;
+  margin: 20px;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav_list li :hover {
+  cursor: pointer;
+}
+
+.left {
+  font-size: 1.4rem;
+}
+
+.first {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.leftsec {
+  margin: 20px;
+  width: 40%;
+  font-size: 2.1rem;
+  border-radius: 1px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-text-stroke: var(#969696 #94a3b8) 0.34px;
+}
+
+.rightsec {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.button_download{
+    display: flex;
+    margin: 0px 0px 0px -60px;
+    flex-direction: column;
+    gap:15px;
+}
+
+.download{
+    width:30rem;
+    height:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 30px 125px;
+    flex-direction: column;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: var(--font-heading);
+    background:linear-gradient(90deg ,#84d1df,#4e83c9);
+    color: var(--color-bg);
+    border-radius: 33px;
+    border: #f1f3f3 2px solid;
+    
+}
+
+.download:hover{
+    text-decoration: none;
+    transform: scale(1.02);
+    background:linear-gradient(90deg ,#00b4d8,#0077b6);
+}
+
+.button_download p{
+    width: 100%;
+    display: flex;
+    padding-left: 8.5rem;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.7rem;
+    font-weight: bold;
+    color:#ccdff8;
+}
+
+.work_pic {
+  height: 22rem;
+  width: 25rem;
+}
+
+#name_color {
+  color: var(--color-text-muted);
+}
+
+#namecolor p {
+  text-shadow: 30px 30px, #ff0000;
+}
+
+.myself {
+  font-size: 2rem;
+  display: inline-flex;
+  justify-content: flex-start;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#element {
+  color: var(--color-text-muted);
+  font-weight: 800;
+}
+
+.code {
+  font-family: "poppins", sans-serif;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-top: 30px;
+  max-width: 80vw;
+  height: 85vh;
+}
+
+.second h2 {
+  font-family: var(--font-heading);
+  font-size: xx-large;
+  color: var(--color-text);
+  margin-top: 5px;
+}
+
+.second span {
+  font-size: large;
+  color: #94a3b8;
+}
+
+.box {
+  background-color: #f1f3f3;
+  width: 85vw;
+  height: 2px;
+  margin: 50px 0;
+  display: flex;
+}
+
+.vertical {
+    height: 30px;
+    width: 2px;
+    background-color: #f1f3f3;
+    margin:0px 0px 0px 55px;
+    font-family: "fira code" , monospace;
+}
+
+.vertical img{
+    scale:20;
+    padding-bottom: 3.7px;
+}
+
+.vertical p{
+    height: 70px;
+    text-align: center;  
+}
+
+.vertical h2{
+    font-size: 1rem;
+    font-family: var(--font-heading);
+   text-wrap: nowrap;
+   margin-top: 8px;
+}
+
+.box p{
+    font-family: var(--font-code);
+    font-size: 1rem;
+    margin-top: 55px;
+    margin-right: 35px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:var(--color-primary);
+    height:31.8vh;
+    width:100%;
+    font-family: var(--font-body);
+    font-size: medium;
+    border: 2px solid --color-accent-cyan;
+}
+
+footer img{
+    height: 45px;
+    width: 45px;
+}
+
+footer button{
+    background-color: transparent;
+    border: none;
+}
+
+footer ul{
+    width: 45%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    margin:25px;
+    padding-left: 5rem;
+}
+
+.about-me{
+    width:45%;
+    font-family: var(--font-heading);
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.thing{
+    display: flex;
+    flex-direction: row;
+}
+footer p{
+    font-size: 1.02rem;
+    display: flex;
+    justify-content: center;
+    margin: 0px 45px 0px 45px;
+    text-align: justify;
+}
+
+.webname{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: var(--font-heading);
+    font-size: large;
+}
+
+
+.copy{
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+    font-size: 1.2rem;
+    align-items: center;
+
+}
+
+footer h2 , h3 {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    text-decoration: underline 0.8px white;
+    cursor: pointer;
+}
+
+footer hr{
+    margin:0px 12px 0px 12px;
+    background-color:var(--color-surface);
+}
